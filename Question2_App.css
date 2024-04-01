@@ -1,0 +1,40 @@
+.traffic-light-container{
+  display:flex;
+  justify-content: center;
+  /* align-items: center; */
+  height:100vh;
+  background-color: white;
+}
+.traffic-light-box{
+  background: black;
+  padding:20px;
+  border:2px solid black;
+}
+
+.traffic-light{
+  display:flex;
+  flex-direction: column;
+}
+
+.light{
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  margin:0 20px;
+  /* transition: background-color 0.3s ease; */
+}
+
+.red.active{
+  background-color: red;
+}
+.yellow.active{
+  background-color: yellow;
+}
+.green.active{
+  background-color: green;
+}
+
+.light:not(.active){
+  /* border:3px solid white; */
+  background-color: gray;
+}
